@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Contribution Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Weekly Contribution Tracker</h1>
+    <div class="container">
+        <form id="contributionForm">
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week" required>
+            <label for="darp">Darp:</label>
+            <input type="number" id="darp" name="darp" required>
+            <label for="atharva">Atharva:</label>
+            <input type="number" id="atharva" name="atharva" required>
+            <label for="ahmad">Ahmad:</label>
+            <input type="number" id="ahmad" name="ahmad" required>
+            <label for="ranjan">Ranjan:</label>
+            <input type="number" id="ranjan" name="ranjan" required>
+            <button type="submit">Add Contribution</button>
+        </form>
+        <table id="contributionTable">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Darp</th>
+                    <th>Atharva</th>
+                    <th>Ahmad</th>
+                    <th>Ranjan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contributions will be added here dynamically -->
+            </tbody>
+        </table>
+        <div class="totals">
+            <h2>Total Contributions</h2>
+            <p>Darp: <span id="totalDarp">0</span></p>
+            <p>Atharva: <span id="totalAtharva">0</span></p>
+            <p>Ahmad: <span id="totalAhmad">0</span></p>
+            <p>Ranjan: <span id="totalRanjan">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
